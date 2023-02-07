@@ -8,12 +8,13 @@ def cat():
 	print('Meow')
 
 def dog(): 
-	print("Woof")
+	print("Woof!")
 
 def main():
+	print('debug print')
 	if sys.argv[1] == 'dog':
 		dog()
-	if sys.argv[1] == 'cat':
+	elif sys.argv[1] == 'cat':
 		cat()
 	else:
 		default()
